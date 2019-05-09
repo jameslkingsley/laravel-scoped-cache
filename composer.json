@@ -16,7 +16,7 @@
         "php": "^7.1",
         "illuminate/cache": "^5.7",
         "illuminate/support": "^5.7",
-        "orchestra/testbench": "^3.8"
+        "orchestra/testbench": "^3.7"
     },
     "require-dev": {
         "larapack/dd": "^1.0",
