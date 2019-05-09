@@ -22,7 +22,7 @@ trait ScopedCache
      *
      * @return string
      */
-    public function getModelCacheKey($key)
+    public function getScopedCacheKey($key)
     {
         //
     }

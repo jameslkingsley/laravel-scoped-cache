@@ -30,7 +30,7 @@ class ScopedCacheProxy
      */
     public function __call($method, $arguments)
     {
-        $arguments[0] = ScopedCacheMacros::getModelCacheKey()($this->model, $arguments[0]);
+        $arguments[0] = ScopedCacheMacros::getScopedCacheKey()($this->model, $arguments[0]);
 
         foreach ($arguments as $key => &$value) {
             if ($value instanceof Closure) {

@@ -31,13 +31,13 @@ class ScopedCacheMacros
             if (is_array($arguments[0])) {
                 foreach ($arguments[0] as $key => $value) {
                     $arguments[0][
-                        $this->getModelCacheKey($model, $key)
+                        $this->getScopedCacheKey($model, $key)
                     ] = $value;
 
                     unset($arguments[0][$key]);
                 }
             } else {
-                $arguments[0] = $this->getModelCacheKey($model, $arguments[0]);
+                $arguments[0] = $this->getScopedCacheKey($model, $arguments[0]);
             }
 
             return $arguments;
@@ -49,10 +49,10 @@ class ScopedCacheMacros
      *
      * @return string
      */
-    public static function getModelCacheKey()
+    public static function getScopedCacheKey()
     {
         return function ($model, $key) {
-            if ($override = $model->getModelCacheKey($key)) {
+            if ($override = $model->getScopedCacheKey($key)) {
                 return $override;
             } else {
                 $modelName = studly_case(class_basename(get_class($model)));
