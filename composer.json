@@ -1,6 +1,6 @@
 {
     "name": "jameslkingsley/laravel-scoped-cache",
-    "description": ":package_description",
+    "description": "Easily cache items specific to your Eloquent models without having to append the ID.",
     "keywords": [
         "jameslkingsley",
         "laravel-scoped-cache"
