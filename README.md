@@ -2,7 +2,7 @@
 
 This package adds a trait that provides a `cache` method for interacting with your app's cache, but scoped to your Eloquent models. This removes the need to constantly append the model ID to your cache keys. Just access your cache like this instead `$user->cache('Avatar')`.
 
-Under the hood it will prefix your cache keys with a generated model-specific key, in the format `Model_ID:your-key`. You can completely override this format by implementing the `getModelCacheKey` method on your model.
+Under the hood it will prefix your cache keys with a generated model-specific key, in the format `Model_ID:your-key`. You can completely override this format by implementing the `getScopedCacheKey` method on your model.
 
 ## Installation
 
