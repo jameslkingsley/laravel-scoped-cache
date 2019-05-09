@@ -14,9 +14,8 @@
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/cache": "^5.8",
-        "illuminate/container": "^5.8",
-        "illuminate/support": "^5.8",
+        "illuminate/cache": "^5.7",
+        "illuminate/support": "^5.7",
         "orchestra/testbench": "^3.8"
     },
     "require-dev": {
