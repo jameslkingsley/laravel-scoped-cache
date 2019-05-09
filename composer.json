@@ -1,0 +1,49 @@
+{
+    "name": "jameslkingsley/laravel-scoped-cache",
+    "description": ":package_description",
+    "keywords": [
+        "jameslkingsley",
+        "laravel-scoped-cache"
+    ],
+    "homepage": "https://github.com/jameslkingsley/laravel-scoped-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Kingsley"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/cache": "^5.8",
+        "illuminate/container": "^5.8",
+        "illuminate/support": "^5.8",
+        "orchestra/testbench": "^3.8"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kingsley\\ScopedCache\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kingsley\\ScopedCache\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kingsley\\ScopedCache\\ScopedCacheServiceProvider"
+            ]
+        }
+    }
+}
