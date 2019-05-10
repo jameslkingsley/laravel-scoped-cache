@@ -28,7 +28,7 @@ class User extends Model
 Now you can use the cache how you would normally. You can set/get items directly from the `cache` method, or call any other cache method by leaving the argument list empty.
 
 ```php
-$user->cache(['name', $user->name], 5);
+$user->cache(['name' => $user->name], 5);
 $user->cache('name', 'default name');
 
 $user->cache()->remember('name', 5, function () {
